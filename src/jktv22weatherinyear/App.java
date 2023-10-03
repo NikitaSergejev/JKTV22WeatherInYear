@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package jktv22weatherinyear;
+import tasks.InitProject;
 import java.util.Scanner;
 /**
  *
@@ -20,14 +21,16 @@ public class App {
     public void run() {
         System.out.println("----- Weather in year -----");
         boolean repeat = true;
+        InitProject initProject = new InitProject();
+        initProject.init();
         do {
-            System.out.println("задачу");
+            System.out.println("--- Задачи ---");
             System.out.println("0.Закончить программу");
             System.out.println("1.Погода в указанную дату");
             System.out.println("2.Дни в которые былла самая тёплая и холодная погода");
             System.out.println("3.Средняя температура за указанный месяц");
             System.out.println("4.Средняя температура по всем месяцам");
-            System.out.println("Выберите номер задачи: ");
+            System.out.print("Выберите номер задачи: ");
             int task = scanner.nextInt();scanner.nextLine();
             switch (task) { /*sw-> tab*/
                 case 0:
