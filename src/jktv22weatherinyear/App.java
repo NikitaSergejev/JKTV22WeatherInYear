@@ -38,10 +38,13 @@ public class App {
                     repeat = false;
                     break;
                 case 1:
+                   /* WeatherInDate weatherInDate = new WeatherInDate (scanner);*/
+                    
                     
                     break;
                 case 2:
                     
+                    break;
                 case 3:
                     
                     break;
